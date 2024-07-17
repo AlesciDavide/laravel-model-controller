@@ -1,1 +1,22 @@
-@import "~bootstrap/scss/bootstrap";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+article.singleFilm{
+    width: calc((100% / 5));
+    border: 2px solid black;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    color: red;
+}

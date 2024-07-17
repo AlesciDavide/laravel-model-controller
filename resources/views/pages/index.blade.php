@@ -6,17 +6,20 @@
 
 
     @section('main-content')
-    @dump($movies)
+
 
     @foreach ($movies as $movie)
-        <article class="container text-center">
-            <section class="row">
-                <div class="col">
-
-                    <p>{{ $movie['title']}}</p>
+        <section class="container">
+            <article class="singleFilm">
+                <div>
+                    <h1>{{ $movie['title']}}</h1>
+                    <h2>{{ $movie['original_title']}}</h2>
+                    <p>{{ $movie['nationality']}}</p>
+                    <p>{{ $movie['date']}}</p>
+                    <p>{{ $movie['vote']}}</p>
                 </div>
-            </section>
-        </article>
+            </article>
+        </section>
     @endforeach
 
 

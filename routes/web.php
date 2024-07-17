@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Guest\PageController;
+use App\Http\Controllers\Guest\FilmController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +15,4 @@ use App\Http\Controllers\Guest\PageController;
 |
 */
 
-Route::get('/', [PageController::class, 'index']);
+Route::get('/', [FilmController::class, 'index'])->name('guest.home');
